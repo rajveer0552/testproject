@@ -1,0 +1,30 @@
+<p><%= notice %></p>
+<%= form_with model: @article do |form| %>
+<% if @article.errors.any? %>
+<% @article.errors.full_messages.each do |message| %>
+<p> <%= message %> </p>
+<% end %>
+<% end %>
+<div>
+	<%= form.label :name %>
+	<%= form.text_field :name %><br>
+</div>
+<div>
+	<%= form.label :last_Name %>
+	<%= form.text_field :last_name %><br>
+</div>
+<div>
+	<%= form.label :mobile_number %>
+	<%= form.text_field :mobile_number %><br>
+</div>
+<div>
+	<%= form.label :adhar_number %>
+	<%= form.text_field :adhar_number %><br>
+</div>
+<div>
+	<%= form.label :blood_group %>
+	<%= form.text_field :blood_group %><br>
+</div>
+<%=form.submit %>
+
+<% end %>

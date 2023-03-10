@@ -1,0 +1,7 @@
+<h1> Articles Detail</h1>
+<p> <strong> Name: </strong><%= @article.name %> </p>
+<p> <strong> Last name: </strong><%= @article.last_name %> </p>
+<p> <strong> Mobile number: </strong><%= @article.mobile_number %> </p>
+<p> <strong> Adhar number: </strong><%= @article.adhar_number %> </p>
+<p> <strong> Blood_group: </strong><%= @article.blood_group %> </p>
+<%= link_to'Back', articles_path %> | <th> <%= link_to 'Edit', edit_article_path(@article) %> </th>
